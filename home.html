@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="design.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
 </head>
 
 <body>
@@ -16,16 +18,47 @@
         <div class="left-nav">
             <ul>
                 <li id="logo"><img id="logo" src="Logo_of_Twitter.svg.webp" alt=""></li>
-                <li><button id="over">Home</button> </li>
-                <li><button id="over">Explore</button> </li>
-                <li><button>Notifications</button> </li>
-                <li><button>Message</button> </li>
-                <li><button>Lists</button> </li>
-                <li><button>Bookmarks</button> </li>
-                <li><button>Verified</button> </li>
-                <li><button>Profile</button> </li>
-                <li><button>More</button> </li>
-                <li><button id="tweet-bot">Tweet</button></li>
+
+                <li>
+                    <button id="over"><i class="fa fa-home" aria-hidden="true"></i> Home</button>
+                </li>
+
+                <li>
+                    <button id="over"><i class="fa fa-search" aria-hidden="true"></i>Explore</button>
+                </li>
+
+                <li>
+                    <button><i class="fa fa-bell-o" aria-hidden="true"></i>Notifications</button>
+                </li>
+
+                <li>
+                    <button><i class="fa fa-envelope-o" aria-hidden="true"></i>Message</button>
+                </li>
+
+                <li>
+                    <button><i class="fa fa-list" aria-hidden="true"></i>Lists</button>
+                </li>
+
+                <li>
+                    <button><i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmarks</button>
+                </li>
+
+                <li>
+                    <button><i class="fa fa-check-circle-o" aria-hidden="true"></i>Verified</button>
+                </li>
+
+                <li>
+                    <button><i class="fa fa-users" aria-hidden="true"></i>Community</button>
+                </li>
+
+                <li>
+                    <button><i class="fa fa-ellipsis-h" aria-hidden="true"></i>More</button>
+                </li>
+
+                <li>
+                    <button id="tweet-bo
+                    t">Tweet</button>
+                </li>
             </ul>
         </div>
 
@@ -36,20 +69,26 @@
                 <button class="following"><span><b>Following</b> </span> </button>
             </div>
             <div class="post-section">
-                <img src="user-icon.png" alt="">
-                <input type="text" class="my-input" placeholder="What is happening?">
-                <br>
-                <button>Everyone can Reply</button>
-                <div class="tweet-ops">
-                    <ul>
-                        <li><button>x</button></li>
-                        <li><button>x</button></li>
-                        <li><button>x</button></li>
-                        <li><button>x</button></li>
-                        <li><button>x</button></li>
-                        <li><button>x</button></li>
-                    </ul>
+                <div class="prof-img">
+                    <img src="user-icon.png" alt="">
                 </div>
+                <div class="input-ops">
+                    <input type="text" class="my-input" placeholder="What is happening?">
+
+                    <!-- <button>Everyone can Reply</button> -->
+                    <div class="tweet-ops">
+                        <ul>
+                            <li><button>x</button></li>
+                            <li><button>x</button></li>
+                            <li><button>x</button></li>
+                            <li><button>x</button></li>
+                            <li><button>x</button></li>
+                            <li><button>x</button></li>
+                            <li class="last-button"><button>Tweet</button></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
             <div class="feed">
                 <div class="post-one">
@@ -107,7 +146,7 @@
     </div>
 
 
-
+    <script type="module" src="test_export.js"></script>
     <script src="app.js" async defer></script>
 </body>
 
